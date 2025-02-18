@@ -3,8 +3,3 @@ Chinemerem, Shell Navigation, not submitted
 Chiagoziem, Git, submitted
 Divine, Shell Navigation, not submitted
 Anissa, Shell Basics, submitted
-Rose, repo, submitted
-mwinyi, shebang, not submitted
-Nkurunziza, script, not submitted
-Ladouche,Permissions and loops,submitted
-cance, Variable and conditions, submitted
