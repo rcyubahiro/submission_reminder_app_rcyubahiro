@@ -1,8 +1,48 @@
-cat <<EOL > README.md
-# Submission Reminder App
+#Submission Reminder System
 
-## Description
-This script sets up an environment for a submission reminder application that alerts students about upcoming deadlines.
+#Project Overview
+This project is a submission reminder system that helps users keep track of pending submissions and sends automated reminders. It ensures that all required submissions are completed on time.
 
-## How to Run
-1. Clone the repository:
+Directory Structure
+
+submission reminder_<username>/
+├── app/
+│   └── reminder.sh
+├── modules/
+│   └── functions.sh
+├── assets/
+│   └── submissions.txt
+├── config/
+│   └── config.env
+├── startup.sh
+
+#Setup Instructions
+
+1. Clone the Repository
+git clone https://github.com/<your-username>/submission reminder.git
+cd submission reminder_<username>
+
+2. Give Execution Permissions
+Ensure all shell scripts are executable:
+chmod +x app/reminder.sh modules/functions.sh startup.sh
+
+3. Configure Environment Variables
+Edit the config/config.env file with necessary environment variables.
+
+4. Run the Startup Script
+./startup.sh
+Script Explanations
+startup.sh
+Loads environment variables.
+Checks for pending submissions in assets/submissions.txt.
+Calls app/reminder.sh to send reminders.
+app/reminder.sh
+Reads pending submissions.
+Sends reminders to users.
+modules/functions.sh
+Contains helper functions used across scripts.
+Example Usage
+Add a pending submission entry in assets/submissions.txt:
+John Doe - Assignment 1 - Due: 2024-02-20
+Run ./startup.sh to process reminders.
+The system will check submissions and notify users
