@@ -6,21 +6,18 @@ This project is a submission reminder system that helps users keep track of pend
 Directory Structure
 
 submission reminder_<username>/
-├── app/
-│   └── reminder.sh
-├── modules/
-│   └── functions.sh
-├── assets/
-│   └── submissions.txt
-├── config/
-│   └── config.env
-├── startup.sh
+app/reminder.sh
+modules/functions.sh
+assets/submissions.txt
+config/ config.env
+startup.sh
 
 #Setup Instructions
 
 1. Clone the Repository
-git clone https://github.com/<your-username>/submission reminder.git
-cd submission reminder_<username>
+After then create the shell scripts called create_environment.sh  that must create the above directory structure 
+fist of all use read to give access to any every users permission to enter any certain number after i created all necessary directories,subdirectories anf files then give the files it's consective contents as provided 
+in the assignment packages,then close....the scripts 
 
 2. Give Execution Permissions
 Ensure all shell scripts are executable:
@@ -31,6 +28,7 @@ Edit the config/config.env file with necessary environment variables.
 
 4. Run the Startup Script
 ./startup.sh
+
 Script Explanations
 startup.sh
 Loads environment variables.
@@ -45,4 +43,4 @@ Example Usage
 Add a pending submission entry in assets/submissions.txt:
 John Doe - Assignment 1 - Due: 2024-02-20
 Run ./startup.sh to process reminders.
-The system will check submissions and notify users
+The system will check submissions and notify users....
